@@ -14,7 +14,6 @@ URL_BASE = "https://is-odd-api.mewtru.com/v1/numbers/"
 def getJsonResponse(url):
     '''
     Performs GET request on url and returns response as json
-        also catches 404 errors and returns that code
     '''
     try:
         response = requests.get(url)
